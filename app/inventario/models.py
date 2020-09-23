@@ -6,3 +6,8 @@ class Producto(models.Model):
     precio = models.IntegerField()
     fechaIngreso = models.DateField(auto_now_add=True)
     comentario = models.TextField()
+
+#Charfield sólo admite como máximo 200 carateres
+#Textfield adminte infinitos caracteres
+
+#Es importante que los comentarios no tengan límite para que no se desborden

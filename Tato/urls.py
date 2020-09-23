@@ -16,6 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+#Desde las url's se redirecciona hacia la aplicación, para procesar la petición del usuario
+#admin viene por defecto con Django.
+#Inventario es el punto de partida de TATO, todas leas peticiones que he hacen a inventario se dirigén hacia la carpeta app
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('inventario', include('app.inventario.urls')),
